@@ -108,7 +108,7 @@ The app will run on the Vite dev server (usually):
 ## Frontend ↔ Backend Integration Notes
 
 - **Base URL**: the axios client is configured to use:
-  - `http://localhost:5000/api`
+  - `http://localhost:8000/api`
 - **JWT storage**:
   - On successful login, `{ token }` is stored in `localStorage` as `token`.
 - **Protected endpoints**:
