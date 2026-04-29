@@ -8,7 +8,7 @@ exports.registerToEvent = async (req, res) => {
     const schema = Joi.object({
       name: Joi.string().min(3).required(),
       email: Joi.string().required(),
-      password: Joi.date().required()
+      password: Joi.string().min(8).required()
     });
     const { error } = schema.validate(req.body);
     if (error) {
